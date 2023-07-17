@@ -4,7 +4,6 @@
 
 <img src="./assets/Cover.png" alt="imagem de capa do DevLinks mostrando a logo da rocketseat, o nome do projeto, a logo do discover e duas imagens representando a tela do projeto, uma para dispositivos com uma proporção de tela de 9:16 usando o tema claro e a outra para dispositivos com uma proporção de tela de 16:9 usando o tema escuro, mostrando a responsividade do layout em diferentes tipos de dispositivos" align="center" />
 </br>
-</br>
 
 <p align="center">
   Acesse o projeto clickando <a>aqui</a></br>
