@@ -6,7 +6,7 @@
 </br>
 
 <p align="center">
-  Acesse o projeto clickando <a>aqui</a></br>
+  Acesse o projeto clickando <a href="https://henriquereiss-c137.github.io/DevLinks/">aqui</a> 👈</br>
   Projeto desenvolvido com o acompanhamento do <b>Discover</b>, o curso gratuito de programação web da <a href="https://rocketseat.com.br/">Rocketseat</a>.
 </p>
 
