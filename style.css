@@ -33,14 +33,15 @@ body {
   height: 100vh;
 
   block-size: fit-content;
+  overflow: hidden;
 }
 
 body > img#background-img {
-  filter: blur(128px);
+  filter: blur(64px);
   opacity: 15%;
 
   width: 100vw;
-  height: 100vh;
+  box-sizing: content-box;
 
   position: absolute;
   transform: rotate(180deg);
