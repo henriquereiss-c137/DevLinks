@@ -59,6 +59,7 @@ div#profile {
 
 div#profile img {
   width: 112px;
+  border-radius: 100%;
 }
 
 div#profile p {
