@@ -74,25 +74,30 @@ div#switch-container {
   background-color: #b7b7b7;
   border-radius: 100px;
 
-  display: flex;
-  align-items: center;
   width: 48px;
   height: 24px;
   margin: 12px 0;
-  padding: 4px;
+
+  position: relative;
 }
 div#switch-container span.switch-button {
   background: #fff var(--switch-bg-url) no-repeat center;
-
-  width: 16px;
-  height: 16px;
   border: none;
   border-radius: 100%;
 
-  /* animation: slide-back 0.2s; */
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s forwards;
 }
-.light div#switch-container span {
-  /* animation: slide-in 0.2s forwards; */
+.light div#switch-container span.switch-button {
+  animation: slide-in 0.2s forwards;
 }
 
 /* Buttons */
@@ -159,18 +164,18 @@ footer {
 
 @keyframes slide-in {
   from {
-    left: 0%;
+    right: 50%;
   }
   to {
-    left: 50%;
+    right: 0;
   }
 }
 
 @keyframes slide-back {
   from {
-    left: 50%;
+    right: 0%;
   }
   to {
-    left: 0%;
+    right: 50%;
   }
 }
