@@ -3,6 +3,7 @@
   font-weight: 400;
   color: var(--text-color);
   list-style: none;
+  text-decoration: none;
 
   margin: 0;
   padding: 0;
@@ -149,6 +150,10 @@ ion-icon {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+
+.green-text {
+  color: var(--icon-color);
 }
 
 @keyframes slide-in {
