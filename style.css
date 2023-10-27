@@ -11,54 +11,27 @@
 
 :root {
   --text-color: #292f36;
-  --bg-url: url(./assets/avatar.jpg);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg);
+  --bg-color: #fff;
+  --icon-color: #292f36;
+  --button-color: #1e1e1e;
+  --switch-color: #fff;
+  --switch-bg-color: #b7b7b7;
 }
 
-.light {
-  --text-color: #292f36;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg);
+.dark {
+  --text-color: #b7b7b7;
+  --bg-color: #111;
+  --icon-color: #4ecdc4;
+  --button-color: #292f36;
+  --switch-color: #4ecdc4;
+  --switch-bg-color: #292f36;
 }
 
 body {
   height: 100vh;
 
-  block-size: fit-content;
-  overflow: hidden;
-}
-
-body > img#background-img {
-  filter: blur(64px);
-  opacity: 15%;
-
-  width: 100vw;
-  box-sizing: content-box;
-
-  position: absolute;
-  transform: rotate(180deg);
-  top: 0;
-  z-index: -137;
-}
-
-body::before {
-  content: "";
-  background: linear-gradient(rgba(255, 255, 255, 0), #fff 45%);
-
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  z-index: -136;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 div#container {
@@ -97,7 +70,7 @@ div#profile img {
 
 /* Switch */
 div#switch-container {
-  background-color: #b7b7b7;
+  background-color: var(--switch-bg-color);
   border-radius: 100px;
 
   width: 48px;
@@ -107,7 +80,7 @@ div#switch-container {
   position: relative;
 }
 div#switch-container span.switch-button {
-  background: #fff var(--switch-bg-url) no-repeat center;
+  background-color: var(--switch-color);
   border: none;
   border-radius: 100%;
 
@@ -122,7 +95,7 @@ div#switch-container span.switch-button {
 
   animation: slide-back 0.2s forwards;
 }
-.light div#switch-container span.switch-button {
+.dark div#switch-container span.switch-button {
   animation: slide-in 0.2s forwards;
 }
 
@@ -140,7 +113,7 @@ ul#actions li a {
   font-weight: 800;
   text-decoration: none;
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: var(--button-color);
   border-radius: 16px;
 
   display: inline-block;
@@ -170,22 +143,12 @@ div#social-links a:hover {
   /* background-color: var(--highlight-color); */
 }
 ion-icon {
-  color: #b7b7b7;
+  color: var(--icon-color);
 }
 
 footer {
   padding: 24px 0;
   text-align: center;
-}
-
-@media (min-width: 700px) {
-  :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
-  }
-
-  .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
-  }
 }
 
 @keyframes slide-in {
