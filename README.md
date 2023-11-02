@@ -7,7 +7,7 @@
 </br>
 
 <p align="center">
-  Acesse o projeto clickando <a href="https://henriquereiss-c137.github.io/DevLinks/" target="_blank">aqui</a> 👈
+  Acesse o projeto clickando <a href="https://henriquereiss-c137.github.io/My-Links/" target="_blank">aqui</a> 👈
 </p>
 
 <h2>💻 Tecnologias</h2>
