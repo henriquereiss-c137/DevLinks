@@ -1,7 +1,6 @@
 * {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: var(--text-color);
   list-style: none;
   text-decoration: none;
 
@@ -11,28 +10,36 @@
 }
 
 :root {
-  --text-color: #292f36;
-  --bg-color: #fff;
-  --icon-color: #292f36;
-  --button-color: #1e1e1e;
-  --switch-color: #fff;
-  --switch-bg-color: #b7b7b7;
+  /* colors   */
+  --alert: #4ecdc4;
+
+  /* backgrounds */
+  --bgHighestContrast: #292f36;
+  --bgHighContrast: #1e1e1e;
+  --bgMediumContrast: #b7b7b7;
+  --bodyBackground: #fff;
+
+  /* texts */
+  --textHighestContrast: #fff;
+  --textHighContrast: #292f36;
 }
 
 .dark {
-  --text-color: #b7b7b7;
-  --bg-color: #111;
-  --icon-color: #4ecdc4;
-  --button-color: #292f36;
-  --switch-color: #4ecdc4;
-  --switch-bg-color: #292f36;
+  /* backgrounds */
+  --bodyBackground: #111;
+  --bgHighestContrast: #4ecdc4;
+  --bgHighContrast: #292f36;
+  --bgMediumContrast: #1e1e1e;
+
+  /* texts */
+  --textHighContrast: #b7b7b7;
 }
 
 body {
   height: 100vh;
 
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bodyBackground);
+  color: var(--textHighContrast);
 }
 
 div#container {
@@ -71,7 +78,7 @@ div#profile img {
 
 /* Switch */
 div#switch-container {
-  background-color: var(--switch-bg-color);
+  background-color: var(--bgMediumContrast);
   border-radius: 100px;
 
   width: 48px;
@@ -81,7 +88,7 @@ div#switch-container {
   position: relative;
 }
 div#switch-container span.switch-button {
-  background-color: var(--switch-color);
+  background-color: var(--textHighestContrast);
   border: none;
   border-radius: 100%;
 
@@ -97,6 +104,7 @@ div#switch-container span.switch-button {
   animation: slide-back 0.2s forwards;
 }
 .dark div#switch-container span.switch-button {
+  background-color: var(--alert);
   animation: slide-in 0.2s forwards;
 }
 
@@ -113,8 +121,8 @@ ul#actions {
 ul#actions li a {
   font-weight: 800;
   text-decoration: none;
-  color: #fff;
-  background-color: var(--button-color);
+  color: var(--textHighestContrast);
+  background-color: var(--bgHighContrast);
   border-radius: 16px;
 
   display: inline-block;
@@ -125,7 +133,7 @@ ul#actions li a {
 }
 ul li a:hover {
   /* background-color: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color); */
+  border: 1.5px solid var(--textHighContrast); */
 }
 
 /* Icons */
@@ -144,7 +152,7 @@ div#social-links a:hover {
   /* background-color: var(--highlight-color); */
 }
 ion-icon {
-  color: var(--icon-color);
+  color: var(--bgHighestContrast);
 }
 
 footer {
@@ -153,7 +161,7 @@ footer {
 }
 
 .green-text {
-  color: var(--icon-color);
+  color: var(--bgHighestContrast);
 }
 
 @keyframes slide-in {
