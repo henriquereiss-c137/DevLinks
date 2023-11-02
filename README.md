@@ -2,7 +2,7 @@
 
 <p align="left">Esse é o meu agregador de links!</p>
 
-<img src="./assets/Cover.png" alt="imagem de capa do agregador de links com duas representações da interface do projeto, uma para dispositivos com uma proporção de tela de 9:16 com o tema claro ativado e a outra para dispositivos com uma proporção de tela de 16:9 usando o tema escuro, demonstrando a responsividade do layout em diferentes tipos de telas" align="center" />
+<img src="./assets/cover.png" alt="imagem de capa do agregador de links com duas representações da interface do projeto, uma para dispositivos com uma proporção de tela de 9:16 com o tema claro ativado e a outra para dispositivos com uma proporção de tela de 16:9 usando o tema escuro, demonstrando a responsividade do layout em diferentes tipos de telas" align="center" />
 </br>
 </br>
 
